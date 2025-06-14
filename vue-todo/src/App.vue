@@ -25,7 +25,7 @@ export default {
   },
   methods: {
     addOnItem: function (todoItem) {
-      var obj = { completed: false, item: todoItem };
+      const obj = { completed: false, item: todoItem };
       localStorage.setItem(todoItem, JSON.stringify(obj));
       this.todoItems.push(obj);
     },
