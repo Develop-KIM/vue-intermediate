@@ -34,7 +34,6 @@ export default {
         this.showModal = true;
         return;
       }
-      // this.$emit('addTodoItem', this.newTodoItem);
       this.$store.commit('addOneItem', this.newTodoItem);
       this.clearInput();
     },
